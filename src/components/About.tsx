@@ -19,7 +19,7 @@ const About = () => {
           <div className="flex justify-center md:justify-start mb-6">
             <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-portfolio-blue shadow-lg">
               <img 
-                src="https://i.pravatar.cc/300" 
+                src="/lovable-uploads/b4f254b3-fc68-4093-a868-64477f0e03cd.png" 
                 alt="Rampranav R" 
                 className="w-full h-full object-cover"
               />

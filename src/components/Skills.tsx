@@ -6,11 +6,11 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const Skills = () => {
   const technicalSkills = [
-    { name: "Java", level: 85 },
+    { name: "Java", level: 60 },
     { name: "HTML", level: 80 },
-    { name: "SQL", level: 75 },
+    { name: "SQL", level: 60 },
     { name: "Git & GitHub", level: 80 },
-    { name: "Arduino", level: 90 },
+    { name: "Arduino", level: 70 },
     { name: "Basic AI/ML", level: 70 },
   ];
 
@@ -102,8 +102,8 @@ const Skills = () => {
           <div className="grid grid-cols-2 gap-4">
             {areasOfInterest.map((area, index) => (
               <Card key={index} className="tech-card hover:border-portfolio-blue transition-all duration-300">
-                <CardContent className="p-6 flex items-center space-x-3">
-                  <div className="text-2xl">{area.icon}</div>
+                <CardContent className="p-6 flex flex-col items-center justify-center space-y-2 text-center">
+                  <div className="text-3xl mb-2">{area.icon}</div>
                   <h4 className="text-lg font-semibold text-portfolio-darkBlue">{area.title}</h4>
                 </CardContent>
               </Card>
