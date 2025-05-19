@@ -18,10 +18,10 @@ const Hero = () => {
           Electronics & Communication Engineer
         </div>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
-          Turning Ideas into <span className="text-portfolio-blue">Digital Reality</span>
+          Hi, I'm <span className="text-portfolio-blue">Rampranav R</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8">
-          I specialize in AI, IoT, and software development, creating innovative solutions for complex problems.
+          I specialize in AI, IoT, and full stack development, creating innovative solutions for complex problems.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 

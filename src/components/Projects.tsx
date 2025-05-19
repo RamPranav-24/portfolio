@@ -7,29 +7,17 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projects = [
     {
-      title: "Smart Home Automation System",
-      description: "Developed an IoT-based smart home system with voice control, automated lighting, and energy consumption monitoring using Arduino and Raspberry Pi.",
-      tech: ["IoT", "Arduino", "Raspberry Pi", "MQTT", "Python"],
+      title: "Arduino Smart Bridge",
+      description: "A flood management system where the bridge opens or closes automatically based on water levels using moisture sensing and servo motors.",
+      tech: ["Arduino Uno", "Soil Moisture Sensor", "Servo Mechanism"],
       link: "#"
     },
     {
-      title: "AI-Powered Health Diagnosis",
-      description: "Created a machine learning model that analyzes medical data to predict health issues with 92% accuracy, using TensorFlow and scikit-learn.",
-      tech: ["Python", "TensorFlow", "scikit-learn", "Flask", "React"],
+      title: "Human Detection System",
+      description: "AI-powered disaster rescue tool that detects human presence under debris using ultrasonic heartbeat signals and PIR sensing.",
+      tech: ["Arduino Uno", "PIR Sensor", "AI Acoustic Technology"],
       link: "#"
-    },
-    {
-      title: "Gesture-Controlled Robot",
-      description: "Built a robot that responds to hand gestures using computer vision algorithms and embedded systems for precise movement control.",
-      tech: ["OpenCV", "Python", "Arduino", "C++", "Embedded Systems"],
-      link: "#"
-    },
-    {
-      title: "Environmental Monitoring Network",
-      description: "Designed a network of sensors for monitoring air quality, temperature, and humidity across multiple locations with real-time data visualization.",
-      tech: ["IoT", "MQTT", "LoRaWAN", "ESP32", "Dashboard"],
-      link: "#"
-    },
+    }
   ];
 
   return (
@@ -42,7 +30,7 @@ const Projects = () => {
       </div>
       
       <p className="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-12">
-        Here are some of my recent projects that showcase my skills in AI, IoT, and software development.
+        Here are some of my recent projects that showcase my skills in AI, IoT, and embedded systems.
       </p>
       
       <div className="grid md:grid-cols-2 gap-8">

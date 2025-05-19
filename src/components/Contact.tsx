@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -43,7 +43,9 @@ const Contact = () => {
               <Mail className="h-6 w-6 text-portfolio-blue" />
             </div>
             <h3 className="text-lg font-semibold mb-2 text-portfolio-darkBlue">Email</h3>
-            <p className="text-gray-700">contact@example.com</p>
+            <a href="mailto:rampranav248@gmail.com" className="text-gray-700 hover:text-portfolio-blue transition-colors">
+              rampranav248@gmail.com
+            </a>
           </CardContent>
         </Card>
         
@@ -53,7 +55,9 @@ const Contact = () => {
               <Phone className="h-6 w-6 text-portfolio-blue" />
             </div>
             <h3 className="text-lg font-semibold mb-2 text-portfolio-darkBlue">Phone</h3>
-            <p className="text-gray-700">+1 (555) 123-4567</p>
+            <a href="tel:+917200474209" className="text-gray-700 hover:text-portfolio-blue transition-colors">
+              +91 7200474209
+            </a>
           </CardContent>
         </Card>
         
@@ -63,9 +67,20 @@ const Contact = () => {
               <MapPin className="h-6 w-6 text-portfolio-blue" />
             </div>
             <h3 className="text-lg font-semibold mb-2 text-portfolio-darkBlue">Location</h3>
-            <p className="text-gray-700">San Francisco, California</p>
+            <p className="text-gray-700">Coimbatore, India</p>
           </CardContent>
         </Card>
+      </div>
+      
+      <div className="mt-10 flex justify-center space-x-6">
+        <a href="https://linkedin.com/in/ram-pranavr" target="_blank" rel="noopener noreferrer" className="bg-portfolio-blue/10 p-4 rounded-full text-portfolio-blue hover:bg-portfolio-blue hover:text-white transition-colors duration-300">
+          <Linkedin className="h-6 w-6" />
+          <span className="sr-only">LinkedIn</span>
+        </a>
+        <a href="https://github.com/RamPranav24" target="_blank" rel="noopener noreferrer" className="bg-portfolio-blue/10 p-4 rounded-full text-portfolio-blue hover:bg-portfolio-blue hover:text-white transition-colors duration-300">
+          <Github className="h-6 w-6" />
+          <span className="sr-only">GitHub</span>
+        </a>
       </div>
       
       <Card className="mt-12 max-w-2xl mx-auto">

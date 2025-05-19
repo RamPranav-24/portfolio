@@ -43,7 +43,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-portfolio-darkBlue font-poppins">Portfolio</div>
+          <div className="text-2xl font-bold text-portfolio-darkBlue font-poppins">Rampranav R</div>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-10">

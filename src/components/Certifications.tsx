@@ -1,33 +1,33 @@
 
 import React from 'react';
 import { Award } from 'lucide-react';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 
 const Certifications = () => {
   const certifications = [
     {
-      title: "TensorFlow Developer Specialization",
-      organization: "DeepLearning.AI",
-      date: "June 2023",
-      description: "Advanced machine learning and neural network implementation using TensorFlow",
+      title: "Salesforce AI Associate",
+      organization: "Salesforce",
+      date: "2023",
+      description: "Skills in AI fundamentals and Salesforce AI implementation"
     },
     {
-      title: "IoT Fundamentals",
-      organization: "Cisco Networking Academy",
-      date: "March 2023",
-      description: "Comprehensive course covering IoT architecture, security, and implementation",
+      title: "Salesforce AI Specialist",
+      organization: "Salesforce",
+      date: "2023",
+      description: "Advanced AI application development in Salesforce environment"
     },
     {
-      title: "Embedded Systems Professional Certification",
-      organization: "IEEE",
-      date: "November 2022", 
-      description: "Advanced embedded systems design, real-time operating systems, and optimization",
+      title: "Oracle AI Foundation",
+      organization: "Oracle",
+      date: "2023", 
+      description: "Core AI concepts and foundation for Oracle AI implementations"
     },
     {
-      title: "Full Stack Web Development",
-      organization: "freeCodeCamp",
-      date: "August 2022",
-      description: "Developed responsive web applications using modern front-end and back-end technologies",
+      title: "Internet of Things",
+      organization: "NPTEL",
+      date: "2023",
+      description: "IoT architecture, protocols, and implementation strategies"
     },
   ];
 
@@ -43,8 +43,8 @@ const Certifications = () => {
       <div className="grid md:grid-cols-2 gap-8">
         {certifications.map((cert, index) => (
           <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-            <CardHeader className="pb-2">
-              <div className="flex justify-between items-start">
+            <CardContent className="p-6">
+              <div className="flex justify-between items-start mb-3">
                 <div>
                   <h3 className="font-semibold text-xl text-portfolio-darkBlue">{cert.title}</h3>
                   <p className="text-gray-600">{cert.organization}</p>
@@ -53,8 +53,6 @@ const Certifications = () => {
                   {cert.date}
                 </div>
               </div>
-            </CardHeader>
-            <CardContent>
               <p className="text-gray-700">{cert.description}</p>
             </CardContent>
           </Card>

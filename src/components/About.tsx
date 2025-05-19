@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { User } from 'lucide-react';
+import { User, School } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Separator } from '@/components/ui/separator';
 
 const About = () => {
   return (
@@ -15,42 +16,59 @@ const About = () => {
       
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
+          <div className="flex justify-center md:justify-start mb-6">
+            <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-portfolio-blue shadow-lg">
+              <img 
+                src="https://i.pravatar.cc/300" 
+                alt="Rampranav R" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Hello! I'm an Electronics & Communication Engineering student passionate about exploring the intersection of hardware and software. With a strong foundation in both theoretical knowledge and practical application, I dive deep into artificial intelligence, Internet of Things (IoT), and software development.
+            Hi, I'm Rampranav R — an Electronics and Communication Engineering student at SNS College of Engineering. I'm passionate about technology, especially AI, IoT, and full stack development.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            My journey in tech has allowed me to work on diverse projects, from designing embedded systems to developing machine learning models. I enjoy solving complex problems and creating innovative solutions that make a positive impact.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            When I'm not coding or soldering, you'll find me exploring new technologies, participating in hackathons, or contributing to open-source projects.
+            With strong academic performance and hands-on experience in projects and internships, I'm driven to apply my skills in real-world engineering problems. I value teamwork, adaptability, and continuous learning.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="space-y-6">
           <Card className="tech-card">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-3 text-portfolio-darkBlue">Education</h3>
-              <p className="text-gray-700">B.Tech in Electronics & Communication Engineering</p>
-              <p className="text-sm text-gray-500 mt-2">2020 - 2024</p>
+              <div className="flex items-center mb-4">
+                <School className="h-5 w-5 text-portfolio-blue mr-2" />
+                <h3 className="text-xl font-semibold text-portfolio-darkBlue">Education</h3>
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <p className="font-medium text-gray-800">SNS College of Engineering</p>
+                  <p className="text-gray-700">Bachelor of Engineering – Electronics and Communication Engineering</p>
+                  <p className="text-sm text-portfolio-blue font-medium">CGPA: 8.70 (2022–2026)</p>
+                </div>
+                <Separator className="my-2" />
+                <div>
+                  <p className="font-medium text-gray-800">Immaculate Matric Higher Secondary School</p>
+                  <p className="text-sm text-gray-700">HSC: 77.8% (2021–2022)</p>
+                  <p className="text-sm text-gray-700">SSLC: 95.2% (2019–2020)</p>
+                </div>
+              </div>
             </CardContent>
           </Card>
           
           <Card className="tech-card">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-3 text-portfolio-darkBlue">Experience</h3>
-              <p className="text-gray-700">2+ years of hands-on experience with IoT and embedded systems</p>
-            </CardContent>
-          </Card>
-          
-          <Card className="tech-card col-span-2">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-3 text-portfolio-darkBlue">Research Interests</h3>
-              <ul className="list-disc ml-5 text-gray-700 grid grid-cols-1 md:grid-cols-2 gap-2">
-                <li>Artificial Intelligence</li>
-                <li>Embedded Systems</li>
-                <li>IoT Applications</li>
-                <li>Signal Processing</li>
-              </ul>
+              <div className="flex items-center mb-4">
+                <School className="h-5 w-5 text-portfolio-blue mr-2" />
+                <h3 className="text-xl font-semibold text-portfolio-darkBlue">Internship</h3>
+              </div>
+              <div>
+                <p className="font-medium text-gray-800">Salzer Electronics Pvt. Ltd., Coimbatore</p>
+                <p className="text-sm text-portfolio-blue">21 Days</p>
+                <p className="text-gray-700 mt-2">
+                  Gained hands-on experience in electronics manufacturing including components like rotary switches, MCBs, transformers, wire harnesses, and industrial switches.
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
